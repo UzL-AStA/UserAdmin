@@ -1,4 +1,5 @@
 MUST:
+* Admin-Login für Benutzer der Gruppe asta-admins
 * Admin kann Benutzer hinzufügen
 * Admin kann Passwort ändern
 * Admin kann Gruppenzugehörigkeit setzen
