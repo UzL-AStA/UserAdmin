@@ -12,11 +12,28 @@
 
 ActiveRecord::Schema.define(version: 20161127150455) do
 
+  create_table "groups", force: :cascade do |t|
+    t.integer  "gid",          null: false
+    t.string   "groupname",    null: false
+    t.string   "email_domain"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "groups_users", id: false, force: :cascade do |t|
+    t.integer "user_id",  null: false
+    t.integer "group_id", null: false
+  end
+
   create_table "users", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "uid",              null: false
+    t.string   "username",         null: false
+    t.string   "first_name",       null: false
+    t.string   "last_name",        null: false
+    t.integer  "primary_group_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["primary_group_id"], name: "index_users_on_primary_group_id"
   end
 
 end
