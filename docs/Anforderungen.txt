@@ -1,0 +1,19 @@
+MUST:
+* Admin kann Benutzer hinzufügen
+* Admin kann Passwort ändern
+* Admin kann Gruppenzugehörigkeit setzen
+* Gremienzugehörigkeiten werden abgebildet
+  * Art der Zugehörigkeit
+  * Subgruppen
+  * Eintritts-/Austrittszeitpunkt
+* Aktivitätslisten können eingegeben werden
+* Admin kann Benutzer sperren
+* Admin kann Benutzer löschen
+* Admin kann Liste zu sperrender/löschender Benutzer generieren
+
+SHOULD:
+
+COULD:
+* Logging
+
+WON'T:
